@@ -17,12 +17,12 @@ To start:
 
    a. Use the project parent for my own application, inherit from spring-boot-starter-parent using the stable release.
 
-	<parent>
-		<!-- Your own application should inherit from spring-boot-starter-parent -->
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.4.RELEASE</version>
-	</parent>
+	&lt;parent&gt;
+		&lt;!-- Your own application should inherit from spring-boot-starter-parent --&gt;
+		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+		&lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
+		&lt;version&gt;1.5.4.RELEASE&lt;/version&gt;
+	&lt;/parent&gt;
 
    b. Use Java 8 and UTF-8 encoding.
 
