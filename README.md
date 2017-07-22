@@ -16,14 +16,14 @@ To start:
 1. Modify pom.xml
 
    a. Use the project parent for my own application, inherit from spring-boot-starter-parent using the stable release.
-
+<pre>
 	&lt;parent&gt;
 		&lt;!-- Your own application should inherit from spring-boot-starter-parent --&gt;
 		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
 		&lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
 		&lt;version&gt;1.5.4.RELEASE&lt;/version&gt;
 	&lt;/parent&gt;
-
+</pre>
    b. Use Java 8 and UTF-8 encoding.
 
 	<properties>
@@ -70,24 +70,24 @@ To start:
 </pre>
 4. Update to Hibernate 5.2 from 5.0 to use JPA 2.1 FAILS.
 <pre>
-	<dependency>
-		<groupId>org.hibernate</groupId>
-		<artifactId>hibernate-core</artifactId>
-		<version>5.2.10.Final</version>
-	</dependency>
-	<dependency>
-		<groupId>org.hibernate</groupId>
-		<artifactId>hibernate-entitymanager</artifactId>
-		<version>5.2.10.Final</version>
-	</dependency>
-	<dependency>
-		<groupId>org.hibernate</groupId>
-		<artifactId>hibernate-jpamodelgen</artifactId>
-		<version>5.2.10.Final</version>
-	</dependency>
-	<dependency>
-		<groupId>org.hibernate</groupId>
-		<artifactId>hibernate-validator</artifactId>
-		<version>5.4.1.Final</version>
-	</dependency>
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.hibernate&lt;/groupId&gt;
+		&lt;artifactId&gt;hibernate-core&lt;/artifactId&gt;
+		&lt;version&gt;5.2.10.Final&lt;/version&gt;
+	&lt;/dependency&gt;
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.hiber&gt;ate&lt;/groupId&gt;
+		&lt;artifactId&gt;hibernate-entitymanager&lt;/artifactId&gt;
+		&lt;version&gt;5.2.10.Final&lt;/version&gt;
+	&lt;/dependency&gt;
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.hibernate&lt;/groupId&gt;
+		&lt;artifactId&gt;hibernate-jpamodelgen&lt;/artifactId&gt;
+		&lt;version&gt;5.2.10.Final&lt;/version&gt;
+	&lt;/dependency&gt;
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.hibernate&lt;/groupId&gt;
+		&lt;artifactId&gt;hibernate-validator&lt;/artifactId&gt;
+		&lt;version&gt;5.4.1.Final&lt;/version&gt;
+	&lt;/dependency&gt;
 </pre>
