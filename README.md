@@ -70,30 +70,24 @@ To start:
 </pre>
 4. Update to Hibernate 5.2 from 5.0 to use JPA 2.1 FAILS.
 <pre>
----------------------------------------------
-Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
-2017-07-20 11:56:07.463 ERROR 1268 [main] o.s.boot.SpringApplication:
-	 Application startup failed
-org.springframework.beans.factory.BeanCreationException:
-	 Error creating bean with name 'entityManagerFactory' defined in class path resource
-	 [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]:
-	 Invocation of init method failed; nested exception is java.lang.NoSuchMethodError:
-	 org.hibernate.engine.spi.SessionFactoryImplementor.getProperties()Ljava/util/Properties;
-
----------------------------------------------
-2017-07-20 11:56:07.488 ERROR 1268 [main] o.s.test.context.TestContextManager:
-	Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@2ddc8ecb]
-	 to prepare test instance [sample.data.jpa.SampleDataJpaApplicationTests@44f0ff2b]
-java.lang.IllegalStateException: Failed to load ApplicationContext
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
-	 ~[spring-test-4.3.9.RELEASE.jar:4.3.9.RELEASE]
-
----------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 17.078 sec <<< FAILURE!
-	 - in sample.data.jpa.SampleDataJpaApplicationTests
-testHome(sample.data.jpa.SampleDataJpaApplicationTests)  Time elapsed: 0.011 sec  <<< ERROR!
-	java.lang.IllegalStateException: Failed to load ApplicationContext
-	 at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-core</artifactId>
+		<version>5.2.10.Final</version>
+	</dependency>
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-entitymanager</artifactId>
+		<version>5.2.10.Final</version>
+	</dependency>
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-jpamodelgen</artifactId>
+		<version>5.2.10.Final</version>
+	</dependency>
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-validator</artifactId>
+		<version>5.4.1.Final</version>
+	</dependency>
 </pre>
-
-5. Revert back to plain Spring Boot.
