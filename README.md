@@ -68,7 +68,7 @@ To start:
 	<[]>
         at sample.data.jpa.SampleDataJpaApplicationTests.testJmx(SampleDataJpaApplicationTests.java:77)
 </pre>
-4. Update to Hibernate 5.2 from 5.0 to use JPA 2.1 FAILS.
+4. Update to Hibernate 5.2 from 5.0 to use JPA 2.1.
 <pre>
 	&lt;dependency&gt;
 		&lt;groupId&gt;org.hibernate&lt;/groupId&gt;
